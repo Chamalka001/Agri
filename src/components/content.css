@@ -12,7 +12,8 @@
 .spec-text:hover{
     color: black;
 }
-.content-pic{
+
+.content-pic img {
     position: absolute;
     width: 100%;
     height: auto;
@@ -21,4 +22,19 @@
     object-fit: cover;
     left: 63%;
     top: 140px;
+}
+
+.btn-1{
+    background-color: rgb(0, 255, 156);
+    color: white;
+    border-color: rgb(0, 255, 156);
+    height: 45px;
+    width: 100px;
+    font-size: 17px;
+}
+
+.btn-1:hover{
+    background-color: rgb(247, 247, 247);
+    border-color: rgb(0, 255, 156);
+    color: rgb(0, 255, 156);
 }

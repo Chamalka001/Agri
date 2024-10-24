@@ -1,5 +1,6 @@
 import React from 'react'
 import './content.css';
+import Button from 'react-bootstrap/Button';
 
 export default function Content() {
   return (
@@ -13,18 +14,12 @@ export default function Content() {
             by offering sustainable, high-quality produce delivered straight from 
             the fields to your home. Skip the middlemen, support your community, 
             and enjoy the taste of nature with every bite.</p>
+        <Button variant="outline-success" className='btn-1'>See More</Button>{' '}
       </div>
     </div>
     <div className="content-pic">
         <div>
-            <img className='front-img' src='/images/Farmer.png' alt='farmer'
-            style={{ 
-                width: '100%', 
-                height: 'auto', 
-                maxWidth: '400px', 
-                borderRadius: '10px', 
-                objectFit: 'cover' 
-            }}></img>
+            <img className='front-img' src='/images/Farmer.png' alt='farmer'></img>
         </div>
     </div>
     </div>

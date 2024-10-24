@@ -12,7 +12,7 @@ export default function Header() {
     <div>
       <Navbar expand="lg" className="">
       <Container fluid>
-        <Navbar.Brand href="#" className='logo'>Agri</Navbar.Brand>
+        <Navbar.Brand href="#" className='logo'>AGRI</Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav
