@@ -1,7 +1,14 @@
+body{
+    font-family: Nunito;
+}
+.cont-1{
+    padding-top: 70px;
+    height: 100vh;
+}
 .container{
     position: absolute;
-    top: 30%;
-    left: 30px;
+    top: 35%;
+    left: 40px;
     text-align: left;
     width: 850px;
 }
@@ -13,15 +20,18 @@
     color: black;
 }
 
+.text-p{
+    text-align: left;
+}
+
 .content-pic img {
     position: absolute;
     width: 100%;
     height: auto;
     max-width: 400px;
-    border-radius: 10px;
     object-fit: cover;
-    left: 63%;
-    top: 140px;
+    left: 65%;
+    top: 165px;
 }
 
 .btn-1{
@@ -37,4 +47,206 @@
     background-color: rgb(247, 247, 247);
     border-color: rgb(0, 255, 156);
     color: rgb(0, 255, 156);
+}
+
+
+
+.icon-1{
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.icon{
+    width: 200px;
+
+    animation: autoRotateAnimation;
+    animation-timeline: view();
+}
+
+@keyframes autoRotateAnimation{
+    from{
+        transform: rotate(0deg);
+    }to{
+        transform: rotate(360deg);
+    }
+}
+
+.autoShow{
+    animation: autoShowAnimation both;
+    animation-timeline: view(70% 5%);
+}
+
+@keyframes autoShowAnimation{
+    from{
+        opacity: 0;
+        transform: translateY(200px) scale(0.3);
+    }to{
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+.container-2-sub{
+    position: relative;
+}
+
+.Det{
+    left: 750px;
+}
+
+.Det-2{
+    left: 400px;
+}
+
+.Det-3{
+    left: 750px;
+}
+
+.hd{
+    margin-top: 50px;
+}
+
+.com{
+    position: relative;
+    width: 350px;
+    margin-top: 50px;
+    background-color: rgb(0, 255, 156,0.8);
+    color: white;
+    border-radius: 10px;
+    padding: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.com:hover{
+    background-color: rgb(138, 250, 207);
+    color: rgb(128, 130, 129);
+}
+
+.container-5{
+    height: 70vh;
+}
+
+.container-6{
+    border: solid 2px;
+    height: 100vh;
+}
+
+.sec-container{
+    margin-top: 100px;
+    height: 70vh;
+    position: relative;
+}
+
+.box-container{
+    padding-top: 10px;
+    margin-left: 25%;
+    width: 800px;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    z-index: 2;
+    position: relative;
+}
+
+.box{
+    width: 150px;
+    height: 270px;/* */
+   /* border: solid 2px;*/
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.box-1 img, .box-2 img,
+.box-3 img, .box-4 img,
+.box-5 img{
+    width: 100px;
+    height: 100px;
+    padding-left: 25px;
+    padding-top: 10px;
+}
+
+.text{
+    
+    margin-top: 30px;
+}
+.text h1, p{
+    text-align: center;
+}
+
+.text h1{
+    font-size: 25px;
+}
+
+.color-box{
+    position: absolute;
+    top:28%;
+    left: 16.5%;
+    background-color: rgb(0, 255, 156);
+    width: 70%;
+    height: 300px;
+    z-index: 1;
+}
+
+.container-4{
+    height: 50vh;
+}
+
+.package{
+    display: flex;
+    height: 450px;
+    width: 500px;
+    margin-left: 34%;
+    margin-top: 30px;
+}
+
+.pic-box{
+    width: 250px;
+    align-items: center;
+    padding-top: 6%;
+}
+
+.vegebag{
+    width: 240px;
+}
+
+
+.t-box{
+    text-align: left;
+}
+
+.i-box{
+    width: 250px;
+}
+
+.i-1{
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-around;
+}
+
+.i-2{
+    width: 50px;
+    border-radius: 25px;
+    height: 50px;
+    margin-top: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.txtnew{
+    font-size: small;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    width: 150px;
+}
+
+.first-txt{
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.second-text{
+    color: rgb(0, 255, 156);
+    font-weight: bold;
 }

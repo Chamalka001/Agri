@@ -5,3 +5,20 @@
 body{
     font-size: 20px;
 }
+.N-H {
+    position: fixed;          /* Fixes the navbar to the top */
+    top: 0;                   /* Aligns it at the very top */
+    width: 100%;              /* Makes the navbar span the full width */
+    z-index: 1000;            /* Ensures it stays on top of other content */
+    background-color: white;  /* Background color for visibility */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a slight shadow for depth */
+}
+
+.btn-search{
+    color: rgb(0, 255, 156);
+    border-color: rgb(0, 255, 156);
+}
+.btn-search:hover{
+    background-color: rgb(0, 255, 156);
+    border-color: rgb(0, 255, 156);
+}

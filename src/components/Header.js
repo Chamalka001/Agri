@@ -10,7 +10,7 @@ import'./header.css';
 export default function Header() {
   return (
     <div>
-      <Navbar expand="lg" className="">
+      <Navbar expand="lg" className="N-H">
       <Container fluid>
         <Navbar.Brand href="#" className='logo'>AGRI</Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
@@ -43,7 +43,7 @@ export default function Header() {
               className="me-2"
               aria-label="Search"
             />
-            <Button variant="outline-success">Search</Button>
+            <Button className='btn-search' variant="outline-success">Search</Button>
           </Form>
         </Navbar.Collapse>
       </Container>
