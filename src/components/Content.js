@@ -1,6 +1,11 @@
 import React from 'react'
 import './content.css';
 import Button from 'react-bootstrap/Button';
+import Card from 'react-bootstrap/Card';
+import { FaFacebook, FaTwitter, FaYoutube, FaGooglePlusG, FaEnvelope } from 'react-icons/fa';
+import { width } from '@fortawesome/free-solid-svg-icons/fa0';
+
+
 
 export default function Content() {
   return (
@@ -24,6 +29,21 @@ export default function Content() {
             <img className='front-img' src='/images/Farmer.png' alt='farmer'></img>
         </div>
     </div>
+    </div>
+
+
+    <div className='dis-sec'>
+      <div className='dis-box'>
+      <div className='dis-1'>
+         <p className='dis-txt'>Super Discount For Your First Purchase</p>  
+      </div> 
+      <div className='dis-2'>
+        <button className='dis-btn'>Free Offer</button>
+      </div>
+      <div className='dis-3'>
+        <p className='dis-txt'>Use discount code in check out !</p>
+      </div>
+      </div>
     </div>
 
     <div className='container-2'>
@@ -57,7 +77,34 @@ export default function Content() {
       </div>
     </div>
 
-    <br></br> 
+    <div className='categories'>
+      <div className='cat-text'>
+        <h1>Our Categories</h1>
+        <p>Do not miss the current offers until the end of March.</p>
+      </div>
+      <div className='cat-pic-box'>
+        <div>
+           <img src='/images/bread.png'></img>
+           <p>Breads and Bakery</p>
+        </div>
+        <div>
+           <img src='/images/beef.png'></img>
+           <p>Meats and Seafood</p>
+        </div>
+        <div>
+           <img src='/images/milk.png'></img>
+           <p>Brakfast and Dairy</p>
+        </div>
+        <div>
+           <img src='/images/fruandveg.png'></img>
+           <p>Fruits and Vegetables</p>
+        </div>
+        <div>
+           <img src='/images/grocery.png'></img>
+           <p>Grocery</p>
+        </div>
+      </div>
+    </div>
 
     <div className='container-4'>
       <div className='package'>
@@ -137,10 +184,102 @@ export default function Content() {
     </section>
     </div>
 
+    <div className='c-pack'>
+      <div className='card-container'>
+        <div>
+        <Card style={{ width: '18rem' }}>
+      <Card.Img variant="top" src='/images/girl.png' />
+      <Card.Body>
+        <Card.Title>Card Title</Card.Title>
+        <Card.Text>
+          Some quick example text to build on the card title and make up the
+          bulk of the card's content.
+        </Card.Text>
+      </Card.Body>
+      <Card.Body>
+        <Card.Link href="#">Card Link</Card.Link>
+        <Card.Link href="#">Another Link</Card.Link>
+      </Card.Body>
+    </Card>
+        </div>
 
-    <div className='container-6'>
-      <div><h1>Hello world</h1></div>
+        <div>
+        <Card style={{ width: '18rem' }}>
+      <Card.Img variant="top" src='/images/boy.png' />
+      <Card.Body>
+        <Card.Title>Card Title</Card.Title>
+        <Card.Text>
+          Some quick example text to build on the card title and make up the
+          bulk of the card's content.
+        </Card.Text>
+      </Card.Body>
+      <Card.Body>
+        <Card.Link href="#">Card Link</Card.Link>
+        <Card.Link href="#">Another Link</Card.Link>
+      </Card.Body>
+    </Card>
+        </div>
+
+        <div className='women-card'>
+        <Card style={{ width: '18rem' }}>
+      <Card.Img variant="top" src='/images/women.png' />
+      <Card.Body>
+        <Card.Title>Card Title</Card.Title>
+        <Card.Text>
+          Some quick example text to build on the card title and make up the
+          bulk of the card's content.
+        </Card.Text>
+      </Card.Body>
+      <Card.Body>
+        <Card.Link href="#">Card Link</Card.Link>
+        <Card.Link href="#">Another Link</Card.Link>
+      </Card.Body>
+    </Card>
+        </div>
+      </div>
     </div>
+
+    <div className='footer'>
+      <div className='footer-det'>
+        <div>
+          <h1>LOGO</h1>
+          <p>Slogan Company</p>
+        </div>
+        <div>
+          <p>Weekly themes</p>
+          <p>Pre sales</p>
+          <p>Submit a ticket</p>
+        </div>
+        <div>
+          <p>Weekly themes</p>
+          <p>Pre sales</p>
+          <p>Submit a ticket</p>
+          <p>Submit a ticket</p>
+        </div>
+        <div>
+          <p>Weekly themes</p>
+          <p>Pre sales</p>
+          <p>Submit a ticket</p>
+        </div>
+        <div>
+          <p>Weekly themes</p>
+          <p>Pre sales</p>
+          <p>Submit a ticket</p>
+          <p>Submit a ticket</p>
+        </div>
+      </div>
+      
+      <hr className='linebreak-footer'/>
+
+      <div className='footer-icons' style={{ display: 'flex', gap: '10px' }}>
+      <FaFacebook size={30} color="#4267B2" />  {/* Facebook Icon */}
+      <FaTwitter size={30} color="#1DA1F2" />   {/* Twitter Icon */}
+      <FaYoutube size={30} color="#FF0000" />   {/* YouTube Icon */}
+      <FaGooglePlusG size={30} color="#DB4437" /> {/* Google+ Icon */}
+      <FaEnvelope size={30} color="#333" />      {/* Email Icon */}
+    </div>
+    </div>
+
     </div>
   )
 }

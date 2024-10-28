@@ -250,3 +250,102 @@ body{
     color: rgb(0, 255, 156);
     font-weight: bold;
 }
+
+.dis-sec{
+    height: 20vh;
+}
+
+.dis-box{
+    background-color: rgb(0, 255, 156);
+    height: 100px;
+    width: 1000px;
+    position: relative;
+    
+    left: 16%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 8px;
+}
+
+.dis-btn{
+    border: none;
+    background-color: rgb(185, 244, 197);
+    height: 40px;
+    width: 150px;
+    border-radius: 20px;
+}
+
+.dis-btn:hover{
+    background-color: rgb(0, 255, 156);
+    color: white;
+    border: solid 1px;
+}
+
+.dis-txt{
+    margin: 0;
+    padding: 0;
+}
+
+.categories{
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.cat-pic-box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.cat-pic-box img{
+    width: 150px;
+}
+
+.cat-pic-box img:hover{
+    border: solid 1px;
+    background-color: rgb(0, 255, 156);
+}
+.cat-text{
+    margin-top: 30px;
+}
+
+.c-pack{
+    height: 80vh;
+}
+
+.card-container{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+}
+
+.card-container img{
+    height: 290px;
+}
+
+.footer{
+    height: 50vh;
+}
+
+.linebreak-footer{
+    height: 3px;             /* Set the height you want */
+  background-color: black;  /* Set color */
+  border: none;  
+  width: 50%;
+  margin-left: 25%;
+}
+
+
+.footer-det{
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-icons{
+    position: relative;
+    left: 44%;
+    top: 30px;
+}
