@@ -2,14 +2,13 @@ import React from 'react'
 import './content.css';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
-import { FaFacebook, FaTwitter, FaYoutube, FaGooglePlusG, FaEnvelope } from 'react-icons/fa';
-import { width } from '@fortawesome/free-solid-svg-icons/fa0';
+
 
 
 
 export default function Content() {
   return (
-    <div>
+    <div className='body-page'>
 
     <div className='cont-1'>
     <div className='container'>
@@ -239,45 +238,32 @@ export default function Content() {
       </div>
     </div>
 
-    <div className='footer'>
-      <div className='footer-det'>
-        <div>
-          <h1>LOGO</h1>
-          <p>Slogan Company</p>
+    <div className='contact'>
+      <div className='contact-container'>
+      <div>
+        <h1>Contact Us</h1>
+      </div>
+      <div className='contact-det'>
+        <div className='con-1'>
+        <select className='con-1-sub-1' id="options" name="options">
+          <option value="option1">General Inqueries</option>
+          <option value="option2">Option 2</option>
+          <option value="option3">Option 3</option>
+        </select>
+          <input className='con-1-sub-1' type='text' placeholder='Your Email'></input>
         </div>
-        <div>
-          <p>Weekly themes</p>
-          <p>Pre sales</p>
-          <p>Submit a ticket</p>
-        </div>
-        <div>
-          <p>Weekly themes</p>
-          <p>Pre sales</p>
-          <p>Submit a ticket</p>
-          <p>Submit a ticket</p>
-        </div>
-        <div>
-          <p>Weekly themes</p>
-          <p>Pre sales</p>
-          <p>Submit a ticket</p>
-        </div>
-        <div>
-          <p>Weekly themes</p>
-          <p>Pre sales</p>
-          <p>Submit a ticket</p>
-          <p>Submit a ticket</p>
+        <div className='con-2'>
+          <input className='con-1-sub-1' type='text' placeholder='Your Name'></input>
+          <input className='con-1-sub-1' type='text' placeholder='Your Phone Number'></input>
         </div>
       </div>
-      
-      <hr className='linebreak-footer'/>
-
-      <div className='footer-icons' style={{ display: 'flex', gap: '10px' }}>
-      <FaFacebook size={30} color="#4267B2" />  {/* Facebook Icon */}
-      <FaTwitter size={30} color="#1DA1F2" />   {/* Twitter Icon */}
-      <FaYoutube size={30} color="#FF0000" />   {/* YouTube Icon */}
-      <FaGooglePlusG size={30} color="#DB4437" /> {/* Google+ Icon */}
-      <FaEnvelope size={30} color="#333" />      {/* Email Icon */}
-    </div>
+      <div>
+          <textarea className='contact-msg' placeholder="Your message"></textarea>
+      </div>
+      <div className='contact-btn'>
+      <Button variant="outline-success" className='btn-2'>See More</Button>
+      </div>
+      </div>
     </div>
 
     </div>

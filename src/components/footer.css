@@ -1,0 +1,23 @@
+.footer{
+    height: 50vh;
+}
+
+.linebreak-footer{
+    height: 3px;             /* Set the height you want */
+  background-color: black;  /* Set color */
+  border: none;  
+  width: 50%;
+  margin-left: 25%;
+}
+
+
+.footer-det{
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-icons{
+    position: relative;
+    left: 44%;
+    top: 30px;
+}
